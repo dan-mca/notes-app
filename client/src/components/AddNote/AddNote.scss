@@ -1,0 +1,19 @@
+@import '../../assets/styles/variables.scss';
+
+.new {
+	background-color: $green!important;
+
+  .note__content {
+    border: none;
+    resize: none;
+    background-color: $green;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: $dark;
+    }
+  }
+}
