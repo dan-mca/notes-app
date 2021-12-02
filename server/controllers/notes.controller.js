@@ -36,8 +36,12 @@ const createNote = async (req, res) => {
     name: req.body.name,
     content: req.body.content
   })
-  await newNote.save()
-  res.send(newNote)
+  try {
+    await newNote.save()
+    res.send(newNote)
+  } catch {
+    res.send({ error: "unable to create new note" })
+  }
 }
 
 const updateNote = async  (req, res) => {
