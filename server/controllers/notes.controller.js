@@ -22,7 +22,7 @@ const getUserNotes = async (req, res) => {
 
 const deleteNote = async (req, res) => {
   try {
-    await Trip.deleteOne({ _id: req.params.id })
+    await Note.deleteOne({ _id: req.params.id })
     res.status(204).send({ message: `Note ${req.params.id} has been deleted.` })
   } catch {
     res.status(404)
@@ -34,7 +34,7 @@ const createNote = async (req, res) => {
   const newNote = new Note({
     uid: req.body.uid,
     name: req.body.name,
-    content: req.body.location
+    content: req.body.content
   })
   await newNote.save()
   res.send(newNote)
