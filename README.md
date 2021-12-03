@@ -4,8 +4,10 @@ Memo is a notes app built using MERN stack with Firebase used for authentication
 
 ## Getting Started
 
-1. The Memo app can be accessed here
-2. An email and password can be registered or the below demo account details can be used that contains sample notes
+1. The Memo app can be accessed [here](https://notes-memo.herokuapp.com/)
+2. An email and password can be registered or the below demo account details can be used that contains sample notes:
+- email: demo@testmail.com
+- pwd: password
 
 ## Screenshots 
 ![Home](https://raw.githubusercontent.com/dan-mca/notes-app/main/client/src/assets/images/home.png)
@@ -41,14 +43,11 @@ The website and API functionally is complete. There are a few areas I would like
 ## Usage
 cd into the relevant directories i.e. notes-client and notes-server
 
-### `npm start`
+### `npm run dev`
 
-Runs the app in the development mode.\
-[http://localhost:3000](http://localhost:3000) to view the app in the browser.\
-[http://localhost:5000](http://localhost:5000/api) to access the api. This will need to be running to be able to retrieve, save and delete notes in the app.
+Runs both the server and client on [http://localhost:5000](http://localhost:5000)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The API can be access on [http://localhost:5000/api](http://localhost:5000/api)
 
 ### `npm test`
 
