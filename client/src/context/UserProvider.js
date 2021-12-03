@@ -25,7 +25,7 @@ const UserProvider = (props) => {
     user: user,
     setUser: setUser,
     isLoggedIn: isLoggedIn,
-    setIsLoggedIn, setIsLoggedIn
+    setIsLoggedIn: setIsLoggedIn
   }
 
   return (

@@ -30,14 +30,14 @@ const LoginRegister = () => {
         button: 'Create account',
         path: '/register'
       })
-    } else if (location.pathname='/register'){
+    } else if (location.pathname === '/register') {
       setPageText({
         title: 'Welcome back',
         paragraph: 'Already have an account?',
         button: 'Login',
         path: '/login'
       })
-    }
+    } 
   }
 
   useEffect(() => {
