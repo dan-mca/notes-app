@@ -10,7 +10,7 @@ const Search = (props) => {
     <section className='search'>
       <div className="search__container">
         <input type='text' placeholder={'Search notes'} onChange={e => handleSearchNote(e.target.value)} />
-        <FontAwesomeIcon icon={faSearch} />
+        <FontAwesomeIcon title='search' icon={faSearch} />
       </div>
     </section>
   )

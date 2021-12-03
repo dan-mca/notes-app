@@ -10,7 +10,6 @@ import { UserContext } from '../context/UserProvider';
 const PrivateElement = ({ children }) => {
 
   const userContext = useContext(UserContext);
-  console.log(userContext)
 
   let location = useLocation()
 

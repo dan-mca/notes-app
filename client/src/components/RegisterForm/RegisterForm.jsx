@@ -26,20 +26,20 @@ const RegisterForm = (props) => {;
           <p className="login-register__paragraph">Enter your details below to start creating notes</p>
         <form className="form form-register" >
           <div className="form-group">
-            <label htmlFor="firstName" className="form-group__label">First name</label>
-            <input name="firstName" type="firstName" className="form-group__input" placeholder="Enter first name" onChange={handleChange}/>
+            <label id="firstName" className="form-group__label">First name</label>
+            <input name="firstName" type="firstName" className="form-group__input" placeholder="Enter first name" aria-labelledby="firstName" onChange={handleChange}/>
           </div>
           <div className="form-group">
-            <label htmlFor="lastName" className="form-group__label">Last name</label>
-            <input name="lastName" type="lastName" className="form-group__input" placeholder="Enter last name" onChange={handleChange}/>
+            <label id="lastName" className="form-group__label">Last name</label>
+            <input name="lastName" type="lastName" className="form-group__input" placeholder="Enter last name" aria-labelledby="lastName" onChange={handleChange}/>
           </div>
           <div className="form-group">
-            <label htmlFor="email" className="form-group__label">Email address</label>
-            <input name="email" type="email" className="form-group__input" placeholder="Enter email address" onChange={handleChange}/>
+            <label id="email" className="form-group__label">Email address</label>
+            <input name="email" type="email" className="form-group__input" placeholder="Enter email address" aria-labelledby="email" onChange={handleChange}/>
           </div>
           <div className="form-group">
-            <label htmlFor="password" className="form-group__label">Password</label>
-            <input name="password" type="password" className="form-group__input" placeholder="Enter password"onChange={handleChange} />
+            <label id="password" className="form-group__label">Password</label>
+            <input name="password" type="password" className="form-group__input" placeholder="Enter password" aria-labelledby="password" onChange={handleChange} />
           </div>
           <button type="submit" className="button button__orange-fill" onClick={handleSubmit}>Create account</button>
           <p className="form-mobile">Already have an account? <Link to="/login">Login</Link></p>  

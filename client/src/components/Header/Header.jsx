@@ -28,7 +28,8 @@ const Header = () => {
             className="header__user" 
             icon={faUser} 
             onClick={handleSignOut} 
-            aria-label="logout"/>
+            aria-label="logout"
+            title="user icon"/>
         </div>
       }
 

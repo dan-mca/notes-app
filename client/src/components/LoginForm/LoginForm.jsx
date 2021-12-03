@@ -2,8 +2,6 @@ import React, {useState} from 'react';
 import './LoginForm.scss';
 import { Link } from 'react-router-dom';
 
-
-
 const LoginForm = (props) => {
   const { data } = props;
   const [formData, setFormData] = useState({email: '', password: ''})
@@ -26,12 +24,12 @@ const LoginForm = (props) => {
         <form className="form form-login" >
           
           <div className="form-group">
-            <label htmlFor="email" className="form-group__label">Email address</label>
-            <input name="email" type="email" className="form-group__input" placeholder="Enter email address" onChange={handleChange}/>
+            <label id="email-label" className="form-group__label">Email address</label>
+            <input name="email" type="email" className="form-group__input" placeholder="Enter email address" aria-labelledby="email-label" onChange={handleChange}/>
           </div>
           <div className="form-group">
-            <label htmlFor="password" className="form-group__label">Password</label>
-            <input name="password" type="password" className="form-group__input" placeholder="Enter password"onChange={handleChange} />
+            <label id="password-label" className="form-group__label">Password</label>
+            <input name="password" type="password" className="form-group__input" placeholder="Enter password" aria-labelledby="password-label" onChange={handleChange} />
           </div>
           <div>
             <a href="/">Forgot password?</a>

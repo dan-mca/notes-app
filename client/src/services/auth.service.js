@@ -24,9 +24,7 @@ export const signIn = async (email, password) => {
 
   export const logOut = async () => {
     try {
-      console.time('logging out in progress')
       const userSignOut = await signOut(auth);
-      console.timeEnd('logging out in progress')
       return userSignOut;
     } catch (error) {
       console.log(`Sign out error: ${error.code}, ${error.message}`)

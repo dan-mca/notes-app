@@ -19,7 +19,7 @@ const Note = (props) => {
       <p className='note__content'>{content}</p>
       <div className='note__footer'>
         <small>{dateFormat(date)}</small>
-        <FontAwesomeIcon icon={faTrashAlt} onClick={() => handleDeleteNote(id)} className='delete'/>
+        <FontAwesomeIcon icon={faTrashAlt} title="delete" onClick={() => handleDeleteNote(id)} className='delete'/>
       </div>
     </div>
   )

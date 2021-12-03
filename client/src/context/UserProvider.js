@@ -28,6 +28,8 @@ const UserProvider = (props) => {
     setIsLoggedIn: setIsLoggedIn
   }
 
+  console.log(user)
+
   return (
    <UserContext.Provider value={data}>
      {props.children}

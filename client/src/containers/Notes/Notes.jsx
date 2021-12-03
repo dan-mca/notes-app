@@ -15,8 +15,6 @@ const Home = () => {
   const [userId, setUserId] = useState("");
 
   const userContext = useContext(UserContext);
-  console.log(userContext.isLoggedIn)
-  console.log(userContext.user)
 
   const getAllNotes = async (uid) => {
     try {
@@ -50,7 +48,6 @@ const Home = () => {
   const deleteNote = (id) => {
     removeNote(id);
     setIsSubmitted(true);
-    console.log(id);
   };
 
   return (
