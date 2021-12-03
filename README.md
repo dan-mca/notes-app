@@ -8,7 +8,9 @@ Memo is a notes app built using MERN stack with Firebase used for authentication
 2. An email and password can be registered or the below demo account details can be used that contains sample notes
 
 ## Screenshots 
-
+![Home](https://raw.githubusercontent.com/dan-mca/notes-app/main/client/src/assets/images/home.png)
+![Login](https://raw.githubusercontent.com/dan-mca/notes-app/main/client/src/assets/images/login.png)
+![Notes](https://raw.githubusercontent.com/dan-mca/notes-app/main/client/src/assets/images/notes.png)
 
 ## Motivation
 I made this alongside the [https://nology.io](nolog.io) development course to build upon the skills I had learnt and to take it further by creating a fullstack app using MERN. 
