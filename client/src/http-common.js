@@ -1,6 +1,6 @@
 import axios from "axios";
 
 export default axios.create({
-  baseURL: process.env.BASE_API_URL,
+  baseURL: "https://notes-memo.herokuapp.com/api",
   headers: { "Content-type": "application/json"}
 });
