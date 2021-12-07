@@ -39,6 +39,7 @@ The website and API functionally is complete. There are a few areas I would like
 - Express
 - Node
 - MongoDB
+- React Testing Library - [example test (adding a note)](https://github.com/dan-mca/notes-app/blob/main/client/src/components/AddNote/AddNote.test.js)
 
 ## Usage
 cd into the relevant directories i.e. notes-client and notes-server
