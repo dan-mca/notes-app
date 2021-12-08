@@ -17,7 +17,6 @@ const Router = () => {
         <Route path='/login' element={<LoginRegister />} />
         <Route path='/register' element={<LoginRegister />} />
         <Route path="/notes" element={<PrivateRoute ><Notes /></PrivateRoute>}></Route>
-        <Route path="*" element={<NotFound />} />
       </Routes>
     </UserProvider>
   )
